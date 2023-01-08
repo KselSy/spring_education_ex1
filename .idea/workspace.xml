@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="Autowired annotation">
+    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="Value annotation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Test7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Test8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Person.java" afterDir="false" />
     </list>
@@ -60,33 +65,7 @@
       <recent name="C:\Users\KselSy\IdeaProjects\spring_education_ex1\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test6">
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_introduction.Test2" />
-      <module name="spring_education_ex1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spring_introduction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_introduction.Test3" />
-      <module name="spring_education_ex1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spring_introduction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Test8">
     <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spring_introduction.Test4" />
       <module name="spring_education_ex1" />
@@ -126,13 +105,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_introduction.Test7" />
+      <module name="spring_education_ex1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring_introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring_introduction.Test8" />
+      <module name="spring_education_ex1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spring_introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test8" />
+        <item itemvalue="Application.Test7" />
         <item itemvalue="Application.Test6" />
         <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Test4" />
-        <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +149,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673178646660</updated>
-      <workItem from="1673178647933" duration="12348000" />
+      <workItem from="1673178647933" duration="14373000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1673179816237</created>
@@ -195,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673193105324</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Qualifier annotation">
+      <created>1673193779129</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673193779129</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Value annotation">
+      <created>1673193971138</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673193971138</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +251,8 @@
     <MESSAGE value="bean scope: singleton and prototype" />
     <MESSAGE value="Component annotation" />
     <MESSAGE value="Autowired annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autowired annotation" />
+    <MESSAGE value="Qualifier annotation" />
+    <MESSAGE value="Value annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Value annotation" />
   </component>
 </project>
