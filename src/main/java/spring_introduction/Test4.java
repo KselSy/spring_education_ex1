@@ -12,8 +12,8 @@ public class Test4 {
         Dog yourDogPrototype = context.getBean("myPetPrototype", Dog.class);
         yourDogPrototype.setName("Strelka");
 
-        System.out.println(myDogPrototype.getName());
-        System.out.println(yourDogPrototype.getName());
+        System.out.println("myDogePrototype name is " + myDogPrototype.getName());
+        System.out.println("yourDogePrototype name is " + yourDogPrototype.getName());
 
 
         Dog myDogSingleton = context.getBean("myPetSingleton", Dog.class);
@@ -21,8 +21,8 @@ public class Test4 {
         Dog yourDogSingleton = context.getBean("myPetSingleton", Dog.class);
         yourDogSingleton.setName("Strelka");
 
-        System.out.println(myDogSingleton.getName());
-        System.out.println(yourDogSingleton.getName());
+        System.out.println("myDogeSingleton name is " + myDogSingleton.getName());
+        System.out.println("yourDogeSingleton name is " + yourDogSingleton.getName());
 
 //        System.out.println("Переменные ссылаются на один и тот же объект?" +
 //                (myDog==yourDog));

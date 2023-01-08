@@ -7,6 +7,14 @@ public class Dog implements Pet{
         System.out.println("Dog bean is created");
     }
 
+    public void init(){
+        System.out.println("Class Dog: init method");
+    }
+
+    public void destroy(){
+        System.out.println("Class Dog: destroy method");
+    }
+
     public String getName() {
         return name;
     }
