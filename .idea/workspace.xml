@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Test4.java" afterDir="false" />
+    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="IoC and DI with construct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673178646660</updated>
-      <workItem from="1673178647933" duration="4065000" />
+      <workItem from="1673178647933" duration="4762000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1673179816237</created>
@@ -126,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673179816237</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="IoC and DI with construct">
+      <created>1673182847728</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673182847728</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +137,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -145,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="IoC and DI with construct" />
+    <option name="LAST_COMMIT_MESSAGE" value="IoC and DI with construct" />
   </component>
 </project>
