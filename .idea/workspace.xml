@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="Знакомство с AOP">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aop/AbstractLibrary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aop/SchoolLibrary.java" afterDir="false" />
+    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="Pointcut">
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/University.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/aspect/ExceptionHandlingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/aspect/MyPointcuts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/aspect/NewLogicAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/aspect/SecurityAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/aspect/UniversityLoggingAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aop/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/UniLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aop/AbstractLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/AbstractLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aop/SchoolLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/SchoolLibrary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/aop/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aop/UniLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/UniLibrary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/aop/aspect/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aop/aspect/LoggingAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +77,7 @@
       <recent name="C:\Users\KselSy\IdeaProjects\spring_education_ex1\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test1">
+  <component name="RunManager" selected="Application.Test3">
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aop.Test1" />
       <module name="spring_education_ex1" />
@@ -82,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_introduction.Test5" />
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aop.Test2" />
       <module name="spring_education_ex1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_introduction.*" />
+          <option name="PATTERN" value="aop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_introduction.Test6" />
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aop.Test3" />
       <module name="spring_education_ex1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_introduction.*" />
+          <option name="PATTERN" value="aop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test3" />
+        <item itemvalue="Application.Test2" />
         <item itemvalue="Application.Test1" />
         <item itemvalue="Application.Test8" />
         <item itemvalue="Application.Test7" />
-        <item itemvalue="Application.Test6" />
-        <item itemvalue="Application.Test5" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +163,7 @@
       <updated>1673178646660</updated>
       <workItem from="1673178647933" duration="14843000" />
       <workItem from="1673198586901" duration="84000" />
-      <workItem from="1673254805773" duration="4987000" />
+      <workItem from="1673254805773" duration="15922000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1673179816237</created>
@@ -233,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673259934133</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Pointcut">
+      <created>1673261384578</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673261384578</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +266,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -274,6 +290,7 @@
     <MESSAGE value="Value annotation" />
     <MESSAGE value="java configure" />
     <MESSAGE value="Знакомство с AOP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Знакомство с AOP" />
+    <MESSAGE value="Pointcut" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pointcut" />
   </component>
 </project>
