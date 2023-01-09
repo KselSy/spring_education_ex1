@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="Value annotation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Test7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Test8.java" afterDir="false" />
+    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="java configure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aop/aspect/LoggingAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_introduction/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_introduction/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +51,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/KselSy/IdeaProjects/spring_education_ex1/resources",
+    "last_opened_file_path": "C:/Users/KselSy/IdeaProjects/javax.annotation-api-1.3.2.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "de169962a537e3e87ac151eb5e0e93eb",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -65,13 +68,13 @@
       <recent name="C:\Users\KselSy\IdeaProjects\spring_education_ex1\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test8">
-    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_introduction.Test4" />
+  <component name="RunManager" selected="Application.Test1">
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aop.Test1" />
       <module name="spring_education_ex1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_introduction.*" />
+          <option name="PATTERN" value="aop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test1" />
         <item itemvalue="Application.Test8" />
         <item itemvalue="Application.Test7" />
         <item itemvalue="Application.Test6" />
         <item itemvalue="Application.Test5" />
-        <item itemvalue="Application.Test4" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +152,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673178646660</updated>
-      <workItem from="1673178647933" duration="14373000" />
+      <workItem from="1673178647933" duration="14843000" />
+      <workItem from="1673198586901" duration="84000" />
+      <workItem from="1673254805773" duration="3584000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1673179816237</created>
@@ -214,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673193971138</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="java configure">
+      <created>1673196088116</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673196088116</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +265,7 @@
     <MESSAGE value="Autowired annotation" />
     <MESSAGE value="Qualifier annotation" />
     <MESSAGE value="Value annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Value annotation" />
+    <MESSAGE value="java configure" />
+    <option name="LAST_COMMIT_MESSAGE" value="java configure" />
   </component>
 </project>
