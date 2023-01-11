@@ -4,14 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="Pointcut">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f16806b2-a9ec-4878-a43e-364967d2f0c3" name="Changes" comment="Наконец-то смог исправить ошибки и подключить hibernate">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_many_to_many/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_many_to_many/entity/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_many_to_many/entity/Section.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_maany_uni/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_maany_uni/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_maany_uni/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_many_bi/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_many_bi/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_many_bi/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_one/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_one/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_one/entity/Detail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_one_to_one/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/Test5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate_test/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate_test/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate_test/entity/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,36 +61,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/KselSy/IdeaProjects/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "de169962a537e3e87ac151eb5e0e93eb",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KselSy/IdeaProjects/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;de169962a537e3e87ac151eb5e0e93eb&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\KselSy\IdeaProjects\spring_education_ex1\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hibernate_one_to_maany_uni.entity" />
+      <recent name="hibernate_one_to_many_bi.entity" />
+      <recent name="hibernate_test2" />
+      <recent name="hibernate_test2.entity" />
+      <recent name="hibernate_test" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.hibernate_test.Test1">
+  <component name="RunManager" selected="Application.hibernate_many_to_many.Test1">
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aop.Test1" />
+      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_one.Test1" />
       <module name="spring_education_ex1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aop.*" />
+          <option name="PATTERN" value="hibernate_one_to_one.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,11 +106,11 @@
       </method>
     </configuration>
     <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aop.Test2" />
+      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_one.Test2" />
       <module name="spring_education_ex1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aop.*" />
+          <option name="PATTERN" value="hibernate_one_to_one.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aop.Test3" />
+    <configuration name="hibernate_many_to_many.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_many_to_many.Test1" />
       <module name="spring_education_ex1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aop.*" />
+          <option name="PATTERN" value="hibernate_many_to_many.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring_introduction.Test8" />
+    <configuration name="hibernate_one_to_maany_uni.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_maany_uni.Test1" />
       <module name="spring_education_ex1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="spring_introduction.*" />
+          <option name="PATTERN" value="hibernate_one_to_maany_uni.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hibernate_test.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernate_test.Test1" />
+    <configuration name="hibernate_one_to_many_bi.Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_many_bi.Test1" />
       <module name="spring_education_ex1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hibernate_test.*" />
+          <option name="PATTERN" value="hibernate_one_to_many_bi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.hibernate_test.Test1" />
-        <item itemvalue="Application.Test1" />
-        <item itemvalue="Application.Test3" />
+        <item itemvalue="Application.hibernate_many_to_many.Test1" />
+        <item itemvalue="Application.hibernate_one_to_many_bi.Test1" />
+        <item itemvalue="Application.hibernate_one_to_maany_uni.Test1" />
         <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Test8" />
+        <item itemvalue="Application.Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +180,10 @@
       <workItem from="1673254805773" duration="15922000" />
       <workItem from="1673362224195" duration="1103000" />
       <workItem from="1673363649044" duration="615000" />
-      <workItem from="1673371760105" duration="2536000" />
+      <workItem from="1673371760105" duration="2697000" />
+      <workItem from="1673429176840" duration="11705000" />
+      <workItem from="1673444169559" duration="3108000" />
+      <workItem from="1673447298629" duration="1045000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1673179816237</created>
@@ -246,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673261384578</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Наконец-то смог исправить ошибки и подключить hibernate">
+      <created>1673375710492</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673375710492</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +318,17 @@
     <MESSAGE value="java configure" />
     <MESSAGE value="Знакомство с AOP" />
     <MESSAGE value="Pointcut" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pointcut" />
+    <MESSAGE value="Наконец-то смог исправить ошибки и подключить hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Наконец-то смог исправить ошибки и подключить hibernate" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

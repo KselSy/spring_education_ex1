@@ -1,4 +1,5 @@
-package hibernate_test.entity;
+package hibernate_one_to_maany_uni.entity;
+
 
 import javax.persistence.*;
 
@@ -13,30 +14,17 @@ public class Employee {
     private String name;
     @Column(name = "surname")
     private String surname;
-    @Column(name = "department")
-    private String department;
     @Column(name = "salary")
     private int salary;
+
 
     public Employee() {
     }
 
-    public Employee(String name, String surname, String departments, int salary) {
+    public Employee(String name, String surname, int salary) {
         this.name = name;
         this.surname = surname;
-        this.department = departments;
         this.salary = salary;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", departments='" + department + '\'' +
-                ", salary=" + salary +
-                '}';
     }
 
     public int getId() {
@@ -63,19 +51,21 @@ public class Employee {
         this.surname = surname;
     }
 
-    public String getDepartments() {
-        return department;
-    }
-
-    public void setDepartments(String departments) {
-        this.department = departments;
-    }
-
     public int getSalary() {
         return salary;
     }
 
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
